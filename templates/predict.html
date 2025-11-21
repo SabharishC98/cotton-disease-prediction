@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>Disease Name: {{ name }}</p>
+    <p>Source: {{ source }}</p>
+    <h3>Preventive Measures</h3>
+    <p>{{ preventive }}</p>
+    {% if youtube_link %}
+        <h3>YouTube Link</h3>
+        <a href="{{ youtube_link }}" target="_blank">Watch Video</a>
+    {% endif %}
+</body>
+</html>
